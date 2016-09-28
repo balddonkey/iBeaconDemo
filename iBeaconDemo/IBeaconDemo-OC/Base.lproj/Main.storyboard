@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fX8-mE-Zzb">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View ControllerOC-->
+        <scene sceneID="bD5-km-fyh">
+            <objects>
+                <viewController id="fX8-mE-Zzb" customClass="ViewController_OC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ogz-9L-MYf"/>
+                        <viewControllerLayoutGuide type="bottom" id="agg-rN-Le6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jvt-QS-Ipk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find: RoboMing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wgq-Ka-HSF">
+                                <rect key="frame" x="247" y="45" width="107" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="74278BDA-B644-4520-8F0C-720EAF059935" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="21F-tC-hHk">
+                                <rect key="frame" x="140" y="79" width="320" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XHq-px-uDh">
+                                <rect key="frame" x="50" y="147" width="500" height="433"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Wgq-Ka-HSF" firstAttribute="centerX" secondItem="jvt-QS-Ipk" secondAttribute="centerX" id="9uH-u9-Mrg"/>
+                            <constraint firstItem="XHq-px-uDh" firstAttribute="leading" secondItem="jvt-QS-Ipk" secondAttribute="leadingMargin" constant="30" id="AfZ-WR-kNd"/>
+                            <constraint firstItem="XHq-px-uDh" firstAttribute="top" secondItem="21F-tC-hHk" secondAttribute="bottom" constant="50" id="Gjg-Er-KNx"/>
+                            <constraint firstItem="agg-rN-Le6" firstAttribute="top" secondItem="XHq-px-uDh" secondAttribute="bottom" constant="20" id="PTZ-2F-EAm"/>
+                            <constraint firstItem="Wgq-Ka-HSF" firstAttribute="top" secondItem="Ogz-9L-MYf" secondAttribute="bottom" constant="25" id="Vo7-PS-1vn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XHq-px-uDh" secondAttribute="trailing" constant="30" id="ah4-j0-XZx"/>
+                            <constraint firstItem="21F-tC-hHk" firstAttribute="top" secondItem="Wgq-Ka-HSF" secondAttribute="bottom" constant="16" id="gl2-n0-FWl"/>
+                            <constraint firstItem="21F-tC-hHk" firstAttribute="centerX" secondItem="Wgq-Ka-HSF" secondAttribute="centerX" id="rBH-QM-2Qd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="messageView" destination="XHq-px-uDh" id="i0v-eX-Yyn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="as7-DV-yRj" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="375" y="429"/>
+        </scene>
+    </scenes>
+</document>
